@@ -1,0 +1,33 @@
+html, body{ -webkit-font-smoothing: antialiased;}
+#corpo {  display: block;  position: relative;  margin: 0 auto;  width: 100%;  max-width: 1600px;  box-sizing: border-box;  padding: 0;  font-family: 'Open Sans', sans-serif;  color: #000000;  overflow: hidden;  background: #ffffff;  text-align: center;}
+/* ROOT */
+a{text-decoration: none;}
+.button-secondary{color:#000000; border: 1px solid #000000; border-radius:999px; padding:1% 3%;}
+.bg{background:#F2F2F2;}
+.border{border:1px solid #7973734f;}
+/* BANNER TOPO E CAIXA DE TEXTO */
+#corpo .banner_topo::before {  padding: 0;  padding-top: 73.0625%;}
+#corpo .banner_topo {  position: relative;  display: block;  width: 100%;  margin: 0 auto;}
+
+/* TEXTO SOBRE O BANNER TOPO */
+#corpo .banner_topo .texto-banner-topo{width: 77%;line-height:0; margin: -10% auto 10%;position: absolute; left: -50px; top:14%;transform:translateX(21%)}
+#corpo .banner_topo .texto-banner-topo img{width:20%;}
+#corpo .banner_topo .texto-banner-topo h3 {font-size:2.8vw;font-weight:300;  margin-top:2%}
+#corpo .banner_topo .texto-banner-topo span{font-weight:300;font-size:2vw;}
+#corpo .banner_topo .texto-banner-topo p {font-size:1.5vw; font-weight:600;margin-top:7%}
+/* TEXTO COMPLEMENTO ABAIXO DO BANNER TOPO */
+#corpo .texto-informativo-topo{width:75%; margin:0 auto 5%;}
+#corpo .texto-informativo-topo .complemento{}
+/* BUTTON PADRÃO SETADO NO ROOT */
+#corpo .servico-cuida{margin-top:5%}
+/* BENEFICIOS */
+#corpo .beneficios{width:100%; margin-bottom:5%;}
+#corpo .beneficios .container-card-desk{width:80%; display:flex;flex-wrap:wrap;justify-content:center;gap:2%; margin:0 auto;}
+#corpo .beneficios .container-card-desk .card{width:26%;text-align:left;background:#f2f2f2; padding: 2% 3%; border-radius:15px;margin-bottom:2%;}
+#corpo .beneficios .container-card-desk .card img{width:10%;}
+/* VANTAGENS */
+#corpo .vantagens{width:100%; margin-top:5%;}
+#corpo .vantagens .container-card-vantagens{width:70%; margin:0 auto; }
+#corpo .vantagens .container-card-vantagens .card{text-align:left; border-radius:20px;padding:3% 5%; line-height:0.5; margin-bottom:3%;}
+#corpo .vantagens .container-card-vantagens .card h3{margin:0;}
+#corpo .vantagens .container-card-vantagens .card p{width:68%;line-height:1.2}
