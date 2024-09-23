@@ -26,7 +26,7 @@ a{text-decoration: none;}
 #corpo .beneficios .container-card-desk .card{width:26%;text-align:left;background:#f2f2f2; padding: 2% 3%; border-radius:15px;margin-bottom:2%;}
 #corpo .beneficios .container-card-desk .card img{width:10%;}
 /* VANTAGENS */
-#corpo .vantagens{width:100%; margin-top:5%;}
+#corpo .vantagens{width:100%; margin:5% 0;}
 #corpo .vantagens .container-card-vantagens{width:70%; margin:0 auto; }
 #corpo .vantagens .container-card-vantagens .card{text-align:left; border-radius:20px;padding:3% 5%; line-height:0.5; margin-bottom:3%;}
 #corpo .vantagens .container-card-vantagens .card h3{margin:0;}
