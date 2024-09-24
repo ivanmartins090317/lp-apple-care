@@ -185,7 +185,7 @@
           
     <div id="aniversario_sanfona_faq">
 
-        <h2>TIRE SUAS DÚVIDAS SOBRE O ANIVERSÁRIO</h2>
+        <h2>Canais para abertura de sinistro</h2>
 
       <div class="aniversario_sanfona_item" sanfona_item_ativo="false" id="aniversario_sanfona_item_01">
         <div class="aniversario_sanfona_titulo">
@@ -217,11 +217,58 @@
 
       </div>
     </div>
+
+
+<!-- CARROSEL TODO OS SERVIÇOS -->
+    <div class="wrapper-aspect-ratio carroussel-servicos">
+      <div class="inner">
+        <div class="texto-carrossel">
+          <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/image-logo-fast-shop.png"
+              alt="logo Fast Shop">
+          <p>Descubra todos nossos cuidados</p>
+        </div>
+    
+        <div class="carousel_serviços">
+          <div id="fast_rotativo" class="owl-carousel fast_rotativo">
+              <picture>
+              <img width="100%" height="auto"
+                  src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-07/files/servico_01.png"
+                  alt="Serviços disponiveis na Fast Shop">
+              <a href="https://site.fastshop.com.br/servicos-instalacao"></a>
+            </picture>
+              <picture>
+                  <img width="100%" height="auto"
+                      src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png"
+                      alt="Serviços disponiveis na Fast Shop">
+                  <a href="https://www.fastshop.com.br/web/a/casa_inteligente"></a>
+              </picture>
+              <picture>
+                  <img width="100%" height="auto"
+                      src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png"
+                      alt="Serviços disponiveis na Fast Shop">
+                  <a href="https://www.fastshop.com.br/web/a/fast_cuida_suporte"></a>
+              </picture>
+              <picture>
+                  <img width="100%" height="auto"
+                      src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_04.png"
+                      alt="Serviços disponiveis na Fast Shop">
+                  <a href="https://www.fastshop.com.br/web/a/fast_cuida_garantia"></a>
+              </picture>
+              <picture>
+                <img width="100%" height="auto"
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_05.png"
+                      alt="Serviços disponiveis na Fast Shop">
+                  <a href="https://www.fastshop.com.br/web/a/fast_cuida_seguro"></a>
+              </picture>
+           </div>
+        </div>
+      </div>  
+   </div>
  
+
+  <!-- FIM LP -->
 </div>
 
-<!-- FIM LP -->
-</div>
 
 <script>
    //Sanfona Faq
@@ -245,5 +292,27 @@
             console.log("close")
         }
     });
+
+   // CARROSSEL FOOTER
+   var carouselDelay = 1000;
+
+if (carouselDelay) {
+    setTimeout(function () {
+        document.querySelector('#fast_rotativo').style.display = 'block';
+
+        $('#fast_rotativo').owlCarousel({
+            items: 1,
+            loop: true,
+            smartSpeed: 600,
+            responsiveClass: true,
+            nav: true,
+            navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+            responsive: { 0: { items: 3, margin: 0 }, 1100: { items: 4 } },
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
+        });
+    }, carouselDelay);
+}
 
 </script>

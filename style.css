@@ -43,13 +43,33 @@ a{text-decoration: none;}
 /* FAQ */
 #corpo #aniversario_sanfona_faq { width: 65%; margin: 0 auto;}
 #corpo .aniversario_faq { padding-bottom: 8rem;}
-#corpo .aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 25px;margin: 0px;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
+#corpo .aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 21px;margin: 5% auto 3%;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
 
-#corpo .aniversario_sanfona_item {position: relative; padding: 0.5rem; cursor: pointer; background-color: #F1F3F4; border-radius: 30px;     font-size: 1.3vw; color: #63697f;}
+#corpo .aniversario_sanfona_item {position: relative; padding: 0.5rem; cursor: pointer; background-color: #F1F3F4; border-radius: 20px;     font-size: 1.3vw; color: #63697f;}
 #corpo .aniversario_sanfona_item_ativo { background-color:  #edf2f6;}
 #corpo .aniversario_sanfona_titulo p{font-weight: bold; text-align:left; margin-left:2%; color:#000000;}
 #corpo .aniversario_sanfona_seta { position: absolute; width: 3%; right: 2%; top: 36%;transform: rotate(0deg);filter: grayscale(100%);}
 #corpo .aniversario_sanfona_conteudo { max-height: 0;overflow: hidden;transition: 200ms;}
-#corpo .aniversario_sanfona_conteudo p { width: 90%; line-height: 18pt;margin-top: 0.7vw;}
+#corpo .aniversario_sanfona_conteudo p { width: 58%; line-height: 23pt;margin-top: 0.7vw; }
 #corpo .aniversario_sanfona_item_ativo .aniversario_sanfona_seta { transform: rotate(180deg);}
 #corpo .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo{transition: max-height 500ms; max-height: 500px; text-align:left; margin-left:2%;color:#000000;}
+#corpo .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo ul li{margin-bottom:1%}
+/* CARROUSSEL SEVIÇOS FOOTER*/
+#corpo .carroussel-servicos::before {  padding: 0;  padding-top: 46.0625%;}
+#corpo .carroussel-servicos {  margin-bottom: 5%;  position: relative;}
+.owl-carousel {  width: 70%;  margin: 0 auto;}
+#corpo .carroussel-servicos .texto-carrossel {  margin-top: 6%;}
+#corpo .carroussel-servicos .texto-carrossel img {  width: 19%;  margin: 1%;}
+#corpo .carroussel-servicos .texto-carrossel p {  font-size: 1.6vw;  margin: 0 auto 4%;  padding: 0;}
+#corpo .carroussel-servicos picture {  display: inline-block;  width: 90%;  margin: 0 auto;}
+#corpo .carroussel-servicos picture a {  position: absolute;  width: 36%;  height: 7%;  background-color: transparent;  bottom: 0%;  left: 3%;}
+/* NAVEGAÇÃO DO CARROUSSEL FOOTER*/
+#corpo .carroussel-servicos .owl-carousel.owl-drag .owl-item {  width: 300px;}
+#corpo .carroussel-servicos .owl-nav {  width: 100%;  position: absolute;  top: 43%;  display: flex;  align-items: center;  justify-content: center;}
+#corpo .carroussel-servicos .owl-nav .owl-next,
+#corpo .carroussel-servicos .owl-nav .owl-prev {  width: 50px;  height: 50px;  border-radius: 50%;  background: #D9D9D9;  border: 1px solid #33333314;  filter:opacity(0.5)}
+#corpo .carroussel-servicos .owl-nav .owl-prev {  position: absolute;  left: -2.8vw;}
+#corpo .carroussel-servicos .owl-nav .owl-next {  position: absolute;  right: -2.8vw;}
+
+
+ 
