@@ -153,7 +153,97 @@
 </div>
 <!-- BOTÃO PADRÃO -->
 <a class="button-secondary" href="">Contrate o serviço em uma loja da Fast</a>
-
-
-
+<!-- FAST CUIDA -->
+<div class="fast-cuida">
+  <div class="text-fast-cuida">
+    <p class="titulo-fast-cuida">Fast Shop Cuida com AppleCare Services Completo </p>
+    <p>Quer deixar seu iPhone ainda mais seguro? Além de todos os benefícios do AppleCare Services Básico, o AppleCare Services Completo oferece proteção: </p>
+  </div>
+  <div class="container-fast-cuida">
+     <!-- CARD FAST CUIDA 01 -->
+     <div class="card">
+      <img src="files/roubo-furto-icon.png" alt="icones dos beneficios">
+      <h3>Roubo ou furto qualificado</h3>
+      <p>Com vigência de 12 meses a partir da data de adesão. </p>
+    </div>
+  <!-- CARD FAST CUIDA 02 -->
+    <div class="card">
+      <img src="files/franquia-roubo-icon.png" alt="icones dos beneficios">
+      <h3>Franquia de roubo ou furto qualificado</h3>
+      <p>Restrita a 20% do limite máximo de indenização.  </p>
+    </div>
+  </div>
+  <div class="observcao-fast-cuida">
+    <small>*Os serviços podem ser contratados em até 60 dias a partir da data da compra do novo produto, desde que o aparelho e a nota fiscal sejam apresentados. Válidos apenas para clientes maiores de 18 anos.  </small>
+  </div>
 </div>
+<!-- BOTÃO PADRÃO -->
+<a class="button-secondary" href="">Contrate o serviço em uma loja da Fast</a>
+
+<!-- FAQ -->
+<div class="wrapper-aspect-ratio aniversario_faq">
+          
+    <div id="aniversario_sanfona_faq">
+
+        <h2>TIRE SUAS DÚVIDAS SOBRE O ANIVERSÁRIO</h2>
+
+      <div class="aniversario_sanfona_item" sanfona_item_ativo="false" id="aniversario_sanfona_item_01">
+        <div class="aniversario_sanfona_titulo">
+            <p>Garantia Estendida ou Danos Materiais</p> <img class="aniversario_sanfona_seta" src="https://fastshopwr-a.akamaihd.net/pages/2023/10/Golden/img/seta_.png"/>
+        </div>
+        <div class="aniversario_sanfona_conteudo">
+          <p> Acione diretamente a Apple:  </p>
+          <ul>
+            <li>Acesse locate.apple.com para encontrar uma Apple Store ou um Centro de Serviço Autorizado Apple mais perto; </li>
+            <li>Acesse getsupport.apple.com, as opções para resolver o problema serão exibidas após responder a algumas perguntas;</li>
+            <li>Ligue 0800 761 0880 para falar diretamente com um agente do Suporte da Apple. </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      
+      <div class="aniversario_sanfona_item" sanfona_item_ativo="false" id="aniversario_sanfona_item_02">
+        <div class="aniversario_sanfona_titulo">
+            <p>Roubo ou Furto Qualificado</p> <img class="aniversario_sanfona_seta" src="https://fastshopwr-a.akamaihd.net/pages/2023/10/Golden/img/seta_.png"/>
+        </div>
+        <div class="aniversario_sanfona_conteudo">
+          <p>Acesse o site da Zurich ou acesse diretamente o espacoclientes.zurich.com.br. 
+            Fale também com a Laiz, assistente virtual pelo zurich.com.br/pt-br/chatonline ou pelo WhatsApp (11) 2890-2121. 
+            A Laiz pode ajudar no processo de acionamento do seguro e esclarecer quaisquer dúvidas sobre coberturas como: ○ Realizar aviso de sinistro ○ Solicitar 2ª via do bilhete ○ Consultar a situação de sinistro aberto ○ Download de documentos para sinistro. </p>
+          <p>Se preferir, ligue para Central de atendimento da Zurich. Para Capitais e regiões metropolitanas: 4020 1608. Demais localidades: 0800 022 1608, horário de atendimento: segunda a sexta-feira, das 8h às 20h e aos sábados das 8h às 18h, exceto feriados. </p>
+        </div>
+      </div>
+      <br>
+
+      </div>
+    </div>
+ 
+</div>
+
+<!-- FIM LP -->
+</div>
+
+<script>
+   //Sanfona Faq
+   $('.aniversario_sanfona_item').click(function() {
+        console.log("click:")
+        var alvo = '#' + $(this).attr('id');
+
+        if ($(alvo).attr('sanfona_item_ativo') == 'false') {
+            $('.aniversario_sanfona_item').attr('sanfona_item_ativo', 'false');
+            $('.aniversario_sanfona_item').removeClass('aniversario_sanfona_item_ativo');
+
+            $(alvo).addClass('aniversario_sanfona_item_ativo');
+            $(alvo).attr('sanfona_item_ativo', 'true');
+
+            console.log("open")
+        }
+        else {
+            $(alvo).removeClass('aniversario_sanfona_item_ativo');
+            $(alvo).attr('sanfona_item_ativo', 'false');
+
+            console.log("close")
+        }
+    });
+
+</script>

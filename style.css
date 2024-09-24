@@ -31,3 +31,25 @@ a{text-decoration: none;}
 #corpo .vantagens .container-card-vantagens .card{text-align:left; border-radius:20px;padding:3% 5%; line-height:0.5; margin-bottom:3%;}
 #corpo .vantagens .container-card-vantagens .card h3{margin:0;}
 #corpo .vantagens .container-card-vantagens .card p{width:68%;line-height:1.2}
+/* FAST CUIDA */
+
+#corpo .fast-cuida{width:100%; margin:5% auto;}
+#corpo .fast-cuida .text-fast-cuida{width:52%; margin:0 auto 5%;}
+#corpo .fast-cuida .titulo-fast-cuida{font-weight:600}
+#corpo .fast-cuida .container-fast-cuida{width:80%; display:flex;flex-wrap:wrap;justify-content:center;gap:2%; margin:0 auto;}
+#corpo .fast-cuida .container-fast-cuida .card{width:26%;text-align:left;background:#f2f2f2; padding: 2% 3%; border-radius:15px;margin-bottom:2%;}
+#corpo .fast-cuida .container-fast-cuida .card img{width:10%;}
+#corpo .fast-cuida .observcao-fast-cuida{width:58%; margin:5% auto 5%;}
+/* FAQ */
+#corpo #aniversario_sanfona_faq { width: 65%; margin: 0 auto;}
+#corpo .aniversario_faq { padding-bottom: 8rem;}
+#corpo .aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 25px;margin: 0px;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
+
+#corpo .aniversario_sanfona_item {position: relative; padding: 0.5rem; cursor: pointer; background-color: #F1F3F4; border-radius: 30px;     font-size: 1.3vw; color: #63697f;}
+#corpo .aniversario_sanfona_item_ativo { background-color:  #edf2f6;}
+#corpo .aniversario_sanfona_titulo p{font-weight: bold; text-align:left; margin-left:2%; color:#000000;}
+#corpo .aniversario_sanfona_seta { position: absolute; width: 3%; right: 2%; top: 36%;transform: rotate(0deg);filter: grayscale(100%);}
+#corpo .aniversario_sanfona_conteudo { max-height: 0;overflow: hidden;transition: 200ms;}
+#corpo .aniversario_sanfona_conteudo p { width: 90%; line-height: 18pt;margin-top: 0.7vw;}
+#corpo .aniversario_sanfona_item_ativo .aniversario_sanfona_seta { transform: rotate(180deg);}
+#corpo .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo{transition: max-height 500ms; max-height: 500px; text-align:left; margin-left:2%;color:#000000;}
