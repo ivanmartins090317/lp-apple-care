@@ -6,7 +6,7 @@ Campanha de serviços 2024
 
 
 ## Screenshots
-[screencapture-127-0-0-1-5500-index-html-2024-09-26-09_23_49.pdf](https://github.com/user-attachments/files/17148472/screencapture-127-0-0-1-5500-index-html-2024-09-26-09_23_49.pdf)
+![Design sem nome](https://github.com/user-attachments/assets/b3913680-4f65-4dca-b5f4-2cc5191b6aea)
 
 
 
