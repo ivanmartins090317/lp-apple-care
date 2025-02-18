@@ -1,0 +1,427 @@
+<style>
+  
+html, body{ -webkit-font-smoothing: antialiased;}
+#corpo-care {  display: block;  position: relative;  margin: 0 auto;  width: 100%;  max-width: 1600px;  box-sizing: border-box;  padding: 0;  font-family: 'Open Sans', sans-serif;  color: #000000;  overflow: hidden;  background: #ffffff;  text-align: center;}
+/* ROOT */
+a{text-decoration: none;}
+.button-secondary{color:#000000; border: 1px solid #000000; border-radius:999px; padding:1% 3%;}
+.bg{background:#F2F2F2;}
+.border{border:1px solid #7973734f;}
+/* BANNER TOPO E CAIXA DE TEXTO */
+/* #corpo-care .banner_topo::before {  padding: 0;  padding-top: 69.0625%;} */
+#corpo-care .banner_topo {  position: relative;  display: block;  width: 100%;  margin: 0 auto;}
+/* TEXTO SOBRE O BANNER TOPO */
+#corpo-care .banner_topo .texto-banner-topo{width: 77%;line-height:0; margin: -10% auto 10%;position: absolute; left: 50%;transform: translateX(-50%); top:19%;}
+#corpo-care .banner_topo .texto-banner-topo img{width:20%;}
+#corpo-care .banner_topo .texto-banner-topo h3 {font-size:2.8vw;font-weight:300;  margin-top:2%}
+#corpo-care .banner_topo .texto-banner-topo span{font-weight:300;font-size:2vw;}
+#corpo-care .banner_topo .texto-banner-topo p {font-size:1.5vw; font-weight:600;margin-top:6%}
+/* TEXTO COMPLEMENTO ABAIXO DO BANNER TOPO */
+#corpo-care .texto-informativo-topo{width:61%; margin:0 auto 5%;}
+/* BUTTON PADRÃO SETADO NO ROOT */
+#corpo-care .servico-cuida{margin-top:5%}
+/* BENEFICIOS */
+/* ESCONDER A SECÃO MOBILE DO CARROSSEL */
+#corpo-care .fast_beneficios{display:none;}
+#corpo-care .beneficios{width:100%; margin-bottom:5%;}
+#corpo-care .beneficios .titulo-beneficios{font-size:1.5vw; margin:3% auto;}
+#corpo-care .beneficios .container-card-desk{width:70%; display:flex;flex-wrap:wrap;justify-content:center;gap:2%; margin:0 auto;}
+#corpo-care .beneficios .container-card-desk .card{width:26%;text-align:left;background:#f2f2f2; padding: 2% 3%; border-radius:15px;margin-bottom:2%; transition: transform 0.3s ease;}
+#corpo-care .beneficios .container-card-desk .card:hover{transform:scale(1.1)}
+#corpo-care .beneficios .container-card-desk .card img{width:10%;}
+/* VANTAGENS */
+#corpo-care .vantagens{width:100%; margin:5% 0;}
+#corpo-care .vantagens p:first-child{width:39%; margin:0 auto 5%;}
+#corpo-care .vantagens .container-card-vantagens{width:70%; margin:0 auto; }
+#corpo-care .vantagens .container-card-vantagens .card{text-align:left; border-radius:20px;padding:3% 5%; line-height:0.5; margin-bottom:3%;}
+#corpo-care .vantagens .container-card-vantagens .card h3{margin:0;}
+#corpo-care .vantagens .container-card-vantagens .card p{width:68%;line-height:1.2}
+/* FAST CUIDA */
+#corpo-care .fast-cuida{width:100%; margin:5% auto;}
+#corpo-care .fast-cuida .text-fast-cuida{width:52%; margin:0 auto 5%;}
+#corpo-care .fast-cuida .titulo-fast-cuida{font-weight:600}
+#corpo-care .fast-cuida .container-fast-cuida{width:80%; display:flex;flex-wrap:wrap;justify-content:center;gap:2%; margin:0 auto;}
+#corpo-care .fast-cuida .container-fast-cuida .card{width:26%;text-align:left;background:#f2f2f2; padding: 2% 3%; border-radius:15px;margin-bottom:2%;transition:transform 0.3s ease}
+#corpo-care .fast-cuida .container-fast-cuida .card:hover{transform:scale(1.1)}
+#corpo-care .fast-cuida .container-fast-cuida .card h3{width:197px;}
+#corpo-care .fast-cuida .container-fast-cuida .card img{width:10%;}
+#corpo-care .fast-cuida .observcao-fast-cuida{width:58%; margin:5% auto 5%;}
+/* FAQ */
+#corpo-care #aniversario_sanfona_faq { width: 57%; margin: 0 auto;}
+#corpo-care .aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;color: #050709;font-weight: 600;font-size: 21px;margin: 5% auto 3%;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
+#corpo-care .aniversario_sanfona_item {position: relative; padding: 0.5rem; cursor: pointer; background-color: #F1F3F4; border-radius: 20px;     font-size: 1.3vw; color: #63697f;}
+#corpo-care .aniversario_sanfona_item_ativo { background-color:  #edf2f6;}
+#corpo-care .aniversario_sanfona_titulo p{font-weight: bold; text-align:left; margin-left:2%; color:#000000;}
+#corpo-care .aniversario_sanfona_seta { position: absolute; width: 3%; right: 2%; top: 36%;transform: rotate(0deg);filter: grayscale(100%);}
+#corpo-care .aniversario_sanfona_conteudo { max-height: 0;overflow: hidden;transition: 200ms;}
+#corpo-care .aniversario_sanfona_conteudo p { width: 58%; line-height: 23pt;margin-top: 0.7vw; }
+#corpo-care .aniversario_sanfona_item_ativo .aniversario_sanfona_seta { transform: rotate(180deg);}
+#corpo-care .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo{transition: max-height 500ms; max-height: 500px; text-align:left; margin-left:2%;color:#000000; padding-bottom:6%;}
+#corpo-care .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo ul{width:80%;}
+#corpo-care .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo ul li{margin-bottom:1%}
+/* CONTATOS */
+#corpo-care .contatos{width: 75%; margin:5% auto 0;}
+#corpo-care .contatos .box-contatos{width: 100%; display:flex; gap:5%; align-items: center; background:#F2F2F2;padding: 3% 2%;border-radius:20px; margin-bottom: 3%;}
+#corpo-care .contatos .box-contatos .imagem-icone{margin-left: 5%;}
+#corpo-care .contatos .box-contatos .imagem-icone img{width:73%}
+#corpo-care .contatos .texto-contatos{width: 36%;}
+#corpo-care .contatos .texto-contatos p{font-size:1.5vw; font-weight:bold; text-align: left;}
+#corpo-care .contatos .texto-contatos small{display:block;font-size: 0.7vw;font-weight:600; text-align:left}
+#corpo-care .contatos .button-contantos{padding:1.3% 4%; background:#000000; border-radius: 999px; margin-left:23%;}
+#corpo-care .contatos .box-contatos .button-contantos a{font-size:0.9vw;color:#FFFFFF;}
+#corpo-care .investimento-tabela picture img {  width: 50%;}
+/* #corpo-care .investimento-link::before {  padding-top: 63.0625%;} */
+#corpo-care .investimento picture {  position: absolute;}
+#corpo-care .investimento-link a {  position: absolute;  width: 20%;  height: 7%;  background-color: transparent;  bottom: 51%;  left: 67%;}
+/* CARROUSSEL SEVIÇOS FOOTER*/
+/* #corpo-care .carroussel-servicos::before {  padding: 0;  padding-top: 46.0625%;} */
+#corpo-care .carroussel-servicos {  margin-bottom: 5%;  position: relative;}
+#corpo-care .owl-carousel {  width: 70%;  margin: 0 auto;}
+#corpo-care .carroussel-servicos .texto-carrossel {  margin-top: 6%;}
+#corpo-care .carroussel-servicos .texto-carrossel img {  width: 19%;  margin: 1%;}
+#corpo-care .carroussel-servicos .texto-carrossel p {  font-size: 1.6vw;  margin: 0 auto 4%;  padding: 0;}
+#corpo-care .carroussel-servicos picture {  display: inline-block;  width: 90%;  margin: 0 auto;}
+#corpo-care .carroussel-servicos picture a {  position: absolute;  width: 36%;  height: 7%;  background-color: transparent;  bottom: 0%;  left: 3%;}
+/* NAVEGAÇÃO DO CARROUSSEL FOOTER*/
+#corpo-care .carroussel-servicos .owl-carousel.owl-drag .owl-item {  width: 300px;}
+#corpo-care .carroussel-servicos .owl-nav {  width: 100% !;  position: absolute;  top: 43%;  display: flex;  align-items: center;  justify-content: center; display: none !important;}
+#corpo-care .carroussel-servicos .owl-nav .owl-next,
+#corpo-care .carroussel-servicos .owl-nav .owl-prev {  width: 50px;  height: 50px;  border-radius: 50%;  background: #D9D9D9;  border: 1px solid #33333314;  filter:opacity(0.5)}
+#corpo-care .carroussel-servicos .owl-nav .owl-prev {  position: absolute;  left: -2.8vw;}
+#corpo-care .carroussel-servicos .owl-nav .owl-next {  position: absolute;  right: -2.8vw;}
+.carousel_serviços {margin: 0 auto !important;}
+/* MEDIAS QUERYS */
+@media only screen and (min-width:1600px){
+#corpo-care .banner_topo .texto-banner-topo{left:50%;transform:translateX(-50%);}
+#corpo-care .banner_topo .texto-banner-topo h3{font-size:50px;}
+#corpo-care .banner_topo .texto-banner-topo p{font-size:27px;}
+#corpo-care .texto-informativo-topo{width:1068px;}
+#corpo-care .texto-informativo-topo p{font-size:21px;}
+#corpo-care .vantagens .container-card-vantagens .card p{line-height:1.4}
+#corpo-care .fast-cuida .text-fast-cuida {width:57%}
+#corpo-care .fast-cuida .container-fast-cuida .card h3 {width:276px;}
+#corpo-care .contatos .texto-contatos p {width:752px; font-size:32px;;}
+#corpo-care .contatos .texto-contatos small {width:765px;}
+#corpo-care p{font-size:21px;}
+#corpo-care h3{font-size:27px;}
+#corpo-care small{font-size:16px;}
+.button-secondary{font-size:21px;}
+}
+@media only screen and (max-width:1100px){
+/* #corpo-care .banner_topo::before{padding-top:106.0625%;} */
+#corpo-care .banner_topo .texto-banner-topo {top:14%; line-height:1}
+#corpo-care .banner_topo .texto-banner-topo img{width:38%;}
+#corpo-care .banner_topo .texto-banner-topo h3{font-size:4vw;}
+#corpo-care .banner_topo .texto-banner-topo p {font-size:3vw;}
+/* BOTÃO PADRÃO */
+.button-secondary {padding:2% 9%; font-size:3.4vw;}
+/* texto-complemento */
+#corpo-care .texto-informativo-topo{width:86%;font-size:3.4vw; line-height:1.7; margin-bottom:15%;}
+/* TEXTO SERVIÇOS */
+#corpo-care .servico-cuida{font-size:4vw; margin-top: 15% ;}
+#corpo-care .beneficios .titulo-beneficios{font-size:3.4vw; margin-bottom:8%;}
+/* BENEFICIOS-MOBILE */
+#corpo-care .beneficios{margin-bottom:25%;}
+#corpo-care .beneficios .container-card-desk{display:none}
+#corpo-care .beneficios .owl-carousel {  width: 90%;  margin: 0 auto;}
+#corpo-care .beneficios .fast_beneficios{display:block;}
+#corpo-care .beneficios .fast_beneficios .card{width:77%;text-align:left;background:#f2f2f2; padding: 10%; border-radius:15px;margin-bottom:2%;height:42vw; transition: transform 0.3s ease;}
+#corpo-care .beneficios .fast_beneficios .card img{width:15%;}
+#corpo-care .beneficios .fast_beneficios .card h3{font-size:3vw;}
+#corpo-care .beneficios .fast_beneficios .card p{font-size:3vw;}
+#corpo-care .beneficios .owl-carousel .owl-stage-outer{width: 105%;}
+/* NAVEGAÇÃO DO CARROUSSEL */
+#corpo-care .beneficios .owl-carousel.owl-drag .owl-item {    width: 300px;  }
+}
+</style>
+
+<div id="corpo-care" >
+
+<!-- BANNER TOPO COM CAIXA DE TEXTO -->
+<div class="wrapper-aspect-ratio banner_topo" style="position: relative !important; display: block !important; width: 100% !important; &nbsp;margin: 0 auto !important;">
+<picture>
+<source media="(max-width: 1100px)" srcset="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/banner-top-mobile-v3.png">
+<img width="100%" height="auto" src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/banner-top-desk-v3.png" alt="banner Apple care serviço Fast shop">
+<div class="texto-banner-topo">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/logo-Fast-shop-claro.png" alt="logo Fast shop">
+<h3><span>com</span> AppleCare Services</h3>
+<p>Serviço e suporte das pessoas que conhecem melhor o iPhone</p>
+</div>
+</picture>
+</div>
+<!-- TEXTO COMPLEMENTO ABAIXO DO BANNER TOPO -->
+<div class="texto-informativo-topo">
+<p>A Fast Shop é o destino certo para quem é fã de produtos da Apple. Você encontra a linha completa de produtos e pode experimentar tudo na loja com a ajuda de um especialista.&nbsp;</p>
+<p class="complemento"> E, após a compra, a sua experiência fica mais completa com o serviço fastshopCuida com AppleCare Services: o suporte oficial da Apple inclui serviço e suporte da Apple, com reparos certificados em Apple Stores e Centros de Serviço Autorizado Apple usando peças originais da Apple e acesso direto ao Suporte&nbsp;da&nbsp;Apple.</p>
+</div>
+<!-- BOTÃO PADRÃO -->
+<a class="button-secondary" href="https://site.fastshop.com.br/lojas">Contrate o serviço em uma loja da Fast</a>
+<!-- TEXTO DE SERVIÇO -->
+<h3 class="servico-cuida">Serviços que cuidam de você em todos os momentos.</h3>
+<!-- BENEFICIOS -->
+<div class="beneficios">
+<p class="titulo-beneficios">Quais são os benefícios?</p>
+<!-- CARD DESK -->
+<div class="container-card-desk">
+<!-- CARD 01 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/abrangencia-icon.png" alt="icones dos beneficios">
+<h3>Abrangência&nbsp;</h3>
+<p>Atendimento rápido e suporte Apple no Brasil e na maioria das principais regiões metropolitanas do mundo.&nbsp;</p>
+</div>
+<!-- CARD 02 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/seguranca-icon.png" alt="icones dos beneficios">
+<h3>Segurança&nbsp;</h3>
+<p>Seu celular protegido com seguro em caso de imprevistos.&nbsp;</p>
+</div>
+<!-- CARD 03 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/economia-icon.png" alt="icones dos beneficios">
+<h3>Economia&nbsp;</h3>
+<p>O custo do seguro é menor que a aquisição de um novo aparelho.&nbsp;&nbsp;</p>
+</div>
+<!-- CARD 04 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/vida-longa-icon.png" alt="icones dos beneficios">
+<h3>Vida longa&nbsp;</h3>
+<p>Atendimento rápido e suporte Apple no Brasil e na maioria das principais regiões metropolitanas do mundo.&nbsp;</p>
+</div>
+<!-- CARD 05 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/comodidade-icon.png" alt="icones dos beneficios">
+<h3>Comodidade&nbsp;&nbsp;&nbsp;</h3>
+<p>O aparelho é enviado para sua casa ou retirado em loja de acordo com o contrato.&nbsp;&nbsp;</p>
+</div>
+</div>
+<!-- CARD MOBILE COM CARROSSEL -->
+<div id="fast_beneficios" class="owl-carousel fast_beneficios owl-loaded owl-drag">
+<!-- CARD 01 -->
+
+<!-- CARD 02 -->
+
+<!-- CARD 03 -->
+
+<!-- CARD 04 -->
+
+<!-- CARD 05 -->
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all;"><div class="owl-item"><div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/abrangencia-icon.png" alt="icones dos beneficios">
+<h3>Abrangência&nbsp;</h3>
+<p>Atendimento rápido e suporte Apple no Brasil e na maioria das principais regiões metropolitanas do mundo.&nbsp;</p>
+</div></div><div class="owl-item"><div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/seguranca-icon.png" alt="icones dos beneficios">
+<h3>Segurança&nbsp;</h3>
+<p>Seu celular protegido com seguro em caso de imprevistos.&nbsp;</p>
+</div></div><div class="owl-item"><div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/economia-icon.png" alt="icones dos beneficios">
+<h3>Economia&nbsp;</h3>
+<p>O custo do seguro é menor que a aquisição de um novo aparelho.&nbsp;&nbsp;</p>
+</div></div><div class="owl-item"><div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/vida-longa-icon.png" alt="icones dos beneficios">
+<h3>Vida longa&nbsp;</h3>
+<p>Atendimento rápido e suporte Apple no Brasil e na maioria das principais regiões metropolitanas do mundo.&nbsp;</p>
+</div></div><div class="owl-item"><div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/comodidade-icon.png" alt="icones dos beneficios">
+<h3>Comodidade&nbsp;&nbsp;&nbsp;</h3>
+<p>O aparelho é enviado para sua casa ou retirado em loja de acordo com o contrato.&nbsp;&nbsp;</p>
+</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png"></button><button type="button" role="presentation" class="owl-next"><img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png"></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+</div>
+<!-- BOTÃO PADRÃO -->
+<a class="button-secondary" href="https://site.fastshop.com.br/lojas">Contrate o serviço em uma loja da Fast</a>
+<!-- VANTAGENS -->
+<div class="vantagens">
+<p>Conheça as vantagens e escolha o serviço* ideal para o seu iPhone
+Fast Shop Cuida com AppleCare Services Básico&nbsp;</p>
+<div class="container-card-vantagens">
+<!-- CARD 01 -->
+<div class="card bg">
+<h3>Garantia Estendida* </h3>
+<p>Apple para proteção do produto com as mesmas coberturas de fábrica.&nbsp;</p>
+<small>*Início após o término da garantia do fabricante e vigência de 12 meses.&nbsp;</small>
+</div>
+<!-- CARD 02 -->
+<div class="card border">
+<h3>Danos materiais acidentais* </h3>
+<p>em casos de quebra, imersão ou derramamento de líquidos, danos elétricos, oxidação e ferrugem.
+</p>
+<small>*Vigência de 24 meses a partir da data de adesão.&nbsp;</small>
+</div>
+<!-- CARD 03 -->
+<div class="card bg">
+<h3>Reparos realizados </h3>
+<p>nas principais regiões metropolitanas do mundo.&nbsp;&nbsp;</p>
+</div>
+<!-- CARD 04 -->
+<div class="card border">
+<h3>Reparo de tela no mesmo dia na maioria das principais regiões </h3>
+<p>metropolitanas do mundo.</p>
+</div>
+<!-- CARD 05 -->
+<div class="card bg">
+<h3>Suporte Apple</h3>
+<p>pelo chat e por telefone pelo 0800 (cobertura mundial).&nbsp;&nbsp;</p>
+</div>
+<!-- CARD 06 -->
+<div class="card border">
+<h3>Franquia reduzida </h3>
+<p>para troca de tela, por apenas R$ 179,00.</p>
+</div>
+<!-- CARD 07 -->
+<div class="card bg">
+<h3>Franquia sem custo </h3>
+<p>para troca de bateria com menos de 80% de carga.</p>
+</div>
+<!-- CARD 08 -->
+<div class="card border">
+<h3>Troca de aparelho </h3>
+<p>completo ou outros reparos por R$ 599,00.</p>
+</div>
+</div>
+</div>
+<!-- BOTÃO PADRÃO -->
+<a class="button-secondary" href="https://site.fastshop.com.br/lojas">Contrate o serviço em uma loja da Fast</a>
+<!-- FAST CUIDA -->
+<div class="fast-cuida">
+<div class="text-fast-cuida">
+<p class="titulo-fast-cuida">Fast Shop Cuida com AppleCare Services Completo</p>
+<p>Quer deixar seu iPhone ainda mais seguro? Além de todos os benefícios do AppleCare Services Básico, o AppleCare Services Completo oferece proteção:</p>
+</div>
+<div class="container-fast-cuida">
+<!-- CARD FAST CUIDA 01 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/roubo-furto-icon.png" alt="icones dos beneficios">
+<h3>Roubo ou furto qualificado</h3>
+<p>Com vigência de 12 meses a partir da data de adesão.</p>
+</div>
+<!-- CARD FAST CUIDA 02 -->
+<div class="card">
+<img src="https://conteudoespecial.fastshop.com.br/pages/2024/09/apple_Care/franquia-roubo-icon.png" alt="icones dos beneficios">
+<h3>Franquia de roubo ou furto qualificado</h3>
+<p>Restrita a 20% do limite máximo de indenização.</p>
+</div>
+</div>
+<div class="observcao-fast-cuida">
+<small>*Os serviços podem ser contratados em até 60 dias a partir da data da compra do novo produto, desde que o aparelho e a nota fiscal sejam apresentados. Válidos apenas para clientes maiores de 18 anos.&nbsp;&nbsp;</small>
+</div>
+</div>
+<!-- BOTÃO PADRÃO -->
+<a class="button-secondary" href="https://site.fastshop.com.br/lojas">Contrate o serviço em uma loja da Fast</a>
+<!-- FAQ -->
+<div class="wrapper-aspect-ratio aniversario_faq">
+<div id="aniversario_sanfona_faq">
+<h2>Canais para abertura de sinistro</h2>
+<div class="aniversario_sanfona_item" sanfona_item_ativo="false" id="aniversario_sanfona_item_01">
+<div class="aniversario_sanfona_titulo">
+<p>Garantia Estendida ou Danos Materiais</p> <img class="aniversario_sanfona_seta" src="https://fastshopwr-a.akamaihd.net/pages/2023/10/Golden/img/seta_.png">
+</div>
+<div class="aniversario_sanfona_conteudo">
+<p> Acione diretamente a Apple:&nbsp;&nbsp;</p>
+<ul>
+<li>Acesse locate.apple.com para encontrar uma Apple Store ou um Centro de Serviço Autorizado Apple mais perto;&nbsp;</li>
+<li>Acesse getsupport.apple.com, as opções para resolver o problema serão exibidas após responder a algumas perguntas;</li>
+<li>Ligue 0800 761 0880 para falar diretamente com um agente do Suporte da Apple.&nbsp;</li>
+</ul>
+</div>
+</div>
+<br>
+<div class="aniversario_sanfona_item" sanfona_item_ativo="false" id="aniversario_sanfona_item_02">
+<div class="aniversario_sanfona_titulo">
+<p>Roubo ou Furto Qualificado</p> <img class="aniversario_sanfona_seta" src="https://fastshopwr-a.akamaihd.net/pages/2023/10/Golden/img/seta_.png">
+</div>
+<div class="aniversario_sanfona_conteudo">
+<p>Acesse o site da Zurich ou acesse diretamente o espacoclientes.zurich.com.br.
+Fale também com a Laiz, assistente virtual pelo zurich.com.br/pt-br/chatonline ou pelo WhatsApp (11) 2890-2121.
+A Laiz pode ajudar no processo de acionamento do seguro e esclarecer quaisquer dúvidas sobre coberturas como: ○ Realizar aviso de sinistro ○ Solicitar 2ª via do bilhete ○ Consultar a situação de sinistro aberto ○ Download de documentos para sinistro.&nbsp;</p>
+<p>Se preferir, ligue para Central de atendimento da Zurich. Para Capitais e regiões metropolitanas: 4020 1608. Demais localidades: 0800 022 1608, horário de atendimento: segunda a sexta-feira, das 8h às 20h e aos sábados das 8h às 18h, exceto feriados.&nbsp;</p>
+</div>
+</div>
+<br>
+</div>
+</div>
+<!-- CONTATOS -->
+<div class="contatos">
+<div class="box-contatos">
+<div class="imagem-icone">
+<img src="
+https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v4/icon-location.svg" alt="icon localização">
+</div>
+<div class="texto-contatos"><p>Encontre em uma das nossas lojas</p></div>
+<div class="button-contantos">
+<a href="https://site.fastshop.com.br/lojas">Encontre aqui</a>
+</div>
+</div>
+<div class="box-contatos">
+<div class="imagem-icone">
+<img src="
+https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v4/icon-phone.svg" alt="icon localização">
+</div>
+<div class="texto-contatos">
+<p>Fale com um vendedor online</p>
+<small>Segunda a Sexta, das 10h às 22h.Sábados e Feriados, das 10h às 16h. <br>Consulte condições gerais</small>
+</div>
+<div class="button-contantos">
+<a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=551132322949">Fale agora</a>
+</div>
+</div>
+</div>
+<!-- CARROSEL TODO OS SERVIÇOS -->
+<div class="wrapper-aspect-ratio carroussel-servicos" style="margin-bottom: 5%; position: relative !important;">
+<div class="">
+<div class="texto-carrossel" style="margin: 6% !important;">
+<img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/image-logo-fast-shop.png" alt="logo Fast Shop" style="width: 19% !important; margin: &nbsp;1% !important;">
+<p style="font-size: 1.6vw !important; margin: &nbsp;0 auto 4% !important; padding: 0 !important;">Descubra todos nossos cuidados</p>
+</div>
+<div class="carousel_serviços" style="width: 70% !important; margin: &nbsp;0 auto !important;">
+<div id="fast_rotativo" class="owl-carousel fast_rotativo owl-loaded owl-drag" style="width: 100% !important; display: block;">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1400px, 0px, 0px); transition: 0.6s; width: 3640px;"><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/casa_inteligente"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_suporte"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_04.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_garantia"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_05.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_seguro"></a>
+</picture></div><div class="owl-item" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-07/files/servico_01.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://site.fastshop.com.br/servicos-instalacao"></a>
+</picture></div><div class="owl-item active" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/casa_inteligente"></a>
+</picture></div><div class="owl-item active" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_suporte"></a>
+</picture></div><div class="owl-item active" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_04.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_garantia"></a>
+</picture></div><div class="owl-item active" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_05.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_seguro"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-07/files/servico_01.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://site.fastshop.com.br/servicos-instalacao"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/casa_inteligente"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_suporte"></a>
+</picture></div><div class="owl-item cloned" style="width: 280px;"><picture>
+<img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_04.png" alt="Serviços disponiveis na Fast Shop">
+<a href="https://www.fastshop.com.br/web/a/fast_cuida_garantia"></a>
+</picture></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png"></button><button type="button" role="presentation" class="owl-next"><img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png"></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+</div>
+</div>
+</div>
+<!-- FIM LP -->
+</div>
